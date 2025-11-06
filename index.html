@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sacramento Web Design - Crafting stunning, high-performing websites to grow your business with responsive design, SEO optimization, and custom graphics.">
+    <meta name="keywords" content="web design, Sacramento, responsive design, SEO optimization, custom graphics">
+    <meta name="author" content="Upflex Digital">
+    <title>Sacramento Web Design: Your Digital Success Story</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .gradient-accent {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .gradient-light {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        .card-hover {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        .button-hover {
+            transition: all 300ms ease;
+        }
+        .button-hover:hover {
+            transform: scale(1.05);
+        }
+        .faq-answer {
+            transition: all 300ms ease;
+            max-height: 500px;
+            overflow: hidden;
+        }
+        .faq-answer.hidden {
+            max-height: 0;
+            opacity: 0;
+        }
+        .faq-icon {
+            transition: transform 300ms ease;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 gradient-accent rounded-lg flex items-center justify-center text-white font-bold text-lg">
+                    UD
+                </div>
+                <span class="font-bold text-xl text-gray-900 hidden sm:inline">Upflex Digital</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300">Features</a>
+                <a href="#benefits" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300">Testimonials</a>
+                <a href="#faq" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300">FAQ</a>
+                <a href="#about" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300">About</a>
+            </div>
+
+            <!-- CTA Button Desktop -->
+            <div class="hidden md:block">
+                <a href="https://upflexdigital.com" class="gradient-accent text-white px-6 py-2 rounded-lg font-semibold button-hover hover:shadow-lg">
+                    Get Started
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden mobile-menu-button p-2 rounded-lg hover:bg-gray-100 transition-colors duration-300">
+                <i class="fas fa-bars text-gray-900 text-xl"></i>
+            </button>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden absolute top-full left-0 right-0 bg-white border-t border-gray-200 md:hidden shadow-lg">
+                <div class="flex flex-col space-y-4 px-4 py-6">
+                    <a href="#features" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300">Features</a>
+                    <a href="#benefits" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300">Benefits</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300">Testimonials</a>
+                    <a href="#faq" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300">FAQ</a>
+                    <a href="#about" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300">About</a>
+                    <a href="https://upflexdigital.com" class="gradient-accent text-white px-6 py-2 rounded-lg font-semibold text-center button-hover hover:shadow-lg">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 md:py-32 lg:py-40 overflow-hidden">
+        <div class="absolute inset-0 gradient-light opacity-50"></div>
+        <div class="absolute top-0 right-0 w-96 h-96 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight md:leading-tight lg:leading-tight tracking-tight mb-6">
+                Sacramento Web Design: Your Digital Success Story
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
+                Crafting stunning, high-performing websites to grow your Sacramento business. Transform your digital presence with custom design, strategic optimization, and measurable results that drive real business growth.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://upflexdigital.com" class="gradient-accent text-white px-8 py-3 rounded-lg font-bold text-lg button-hover hover:shadow-xl inline-block">
+                    Start Your Project Today
+                </a>
+                <a href="#features" class="border-2 border-purple-600 text-purple-600 px-8 py-3 rounded-lg font-bold text-lg button-hover hover:bg-purple-50 inline-block transition-colors duration-300">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+                    Powerful Features Built for Your Success
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    We combine cutting-edge technology with creative design to deliver websites that not only look beautiful but perform exceptionally well in search results and user engagement.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1: Responsive Design -->
+                <div class="card-hover bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                    <div class="w-14 h-14 gradient-accent rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-mobile-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Responsive Design</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Your website looks stunning on every device, from desktop computers to tablets and smartphones. Our responsive design approach ensures your visitors have an optimal viewing experience regardless of how they access your site, leading to higher engagement and lower bounce rates.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                            <span>Mobile-first development approach</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                            <span>Lightning-fast load times</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                            <span>Perfect across all screen sizes</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2: SEO Optimization -->
+                <div class="card-hover bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                    <div class="w-14 h-14 gradient-accent rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-search text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">SEO Optimization</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Every website we build is optimized for search engines from the ground up. We implement best practices in on-page SEO, technical optimization, and content strategy to ensure your Sacramento business appears at the top of search results when potential customers are looking for your services.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                            <span>Local Sacramento SEO focus</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                            <span>Keyword research and strategy</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                            <span>Ongoing optimization and monitoring</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3: Custom Graphics -->
+                <div class="card-hover bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                    <div class="w-14 h-14 gradient-accent rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-palette text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Custom Graphics & Design</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Stand out from your competition with custom graphics and branding that reflects your unique identity. Our design team creates original, eye-catching visuals that capture your brand essence and leave a lasting impression on your visitors.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                            <span>Custom brand identity design</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                            <span>Professional graphics and illustrations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                            <span>Modern, trendy design aesthetics</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+                    Real Results That Drive Growth
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Our clients see measurable improvements across key metrics that matter to their business. Here's what you can expect when partnering with us.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Benefit 1: Increased Traffic -->
+                <div class="card-hover relative bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-xl border border-blue-100">
+                    <div class="absolute top-4 right-4 w-20 h-20 bg-blue-200 rounded-full opacity-10"></div>
+                    <div class="relative">
+                        <div class="w-12 h-12 gradient-accent rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-arrow-up text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Increased Traffic</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Watch your website traffic soar with our strategic approach to visibility. Through optimized design, SEO best practices, and content strategy, our clients typically see 150-300% increases in organic traffic within the first 6 months. More visitors means more opportunities to convert them into loyal customers.
+                        </p>
+                        <div class="flex items-center text-purple-600 font-semibold">
+                            <i class="fas fa-chart-line mr-2"></i>
+                            Average 200% traffic increase
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefit 2: Higher Conversions -->
+                <div class="card-hover relative bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-xl border border-green-100">
+                    <div class="absolute top-4 right-4 w-20 h-20 bg-green-200 rounded-full opacity-10"></div>
+                    <div class="relative">
+                        <div class="w-12 h-12 gradient-accent rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-handshake text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Higher Conversions</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            A beautiful website is only valuable if it converts visitors into customers. Our conversion-focused design methodology incorporates proven UX principles, strategic call-to-action placement, and trust-building elements that encourage visitors to take action and become paying customers.
+                        </p>
+                        <div class="flex items-center text-purple-600 font-semibold">
+                            <i class="fas fa-percentage mr-2"></i>
+                            40-60% higher conversion rates
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefit 3: Stronger Brand Presence -->
+                <div class="card-hover relative bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-xl border border-purple-100">
+                    <div class="absolute top-4 right-4 w-20 h-20 bg-purple-200 rounded-full opacity-10"></div>
+                    <div class="relative">
+                        <div class="w-12 h-12 gradient-accent rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-crown text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Stronger Brand Presence</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Establish yourself as a leader in your industry with a professional, memorable web presence. Our custom branding and design create a cohesive identity across all digital touchpoints, building trust and recognition that sets you apart from competitors and attracts quality leads.
+                        </p>
+                        <div class="flex items-center text-purple-600 font-semibold">
+                            <i class="fas fa-star mr-2"></i>
+                            Professional brand authority
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+                    What Our Clients Say
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Don't just take our word for it. Here's what Sacramento business owners and entrepreneurs have to say about working with Upflex Digital.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="card-hover bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        "Upflex Digital completely transformed our online presence. Our website looks incredible, and we've seen a 250% increase in qualified leads in just four months. The team understood our vision and delivered beyond expectations. They're not just web designers—they're true business partners."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 gradient-accent rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            JM
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">Jennifer Martinez</p>
+                            <p class="text-sm text-gray-600">Owner, Martinez Dental Studio</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="card-hover bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        "We were struggling with an outdated website that wasn't converting visitors. The Upflex Digital team redesigned everything with a focus on user experience and conversions. Our contact form submissions tripled, and our Google rankings improved dramatically. Highly recommended!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 gradient-accent rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            RC
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">Robert Chen</p>
+                            <p class="text-sm text-gray-600">CEO, Chen & Associates Law Firm</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="card-hover bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        "The custom graphics and branding work Upflex Digital created for us perfectly captures our company culture. Our new website is fast, beautiful, and our customers consistently compliment the design. The team was professional, responsive, and delivered on time and budget."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 gradient-accent rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            SL
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">Sarah Lopez</p>
+                            <p class="text-sm text-gray-600">Marketing Director, TechStart Sacramento</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="card-hover bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        "Working with Upflex Digital was a game-changer for our e-commerce business. They built us a responsive, SEO-optimized site that loads incredibly fast. Our mobile sales have increased by 180%, and the overall user experience is phenomenal. They truly understand what drives results."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 gradient-accent rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            MT
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">Marcus Thompson</p>
+                            <p class="text-sm text-gray-600">Founder, Sacramento Artisan Goods Co.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section with Background Image -->
+    <section class="relative py-20 md:py-32 overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop'); opacity: 0.3;"></div>
+        <div class="absolute inset-0 gradient-accent opacity-75"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+                Ready to Transform Your Digital Presence?
+            </h2>
+            <p class="text-lg md:text-xl text-white max-w-2xl mx-auto mb-8 leading-relaxed opacity-95">
+                Let's work together to create a website that not only looks amazing but drives real business results. Contact us today for a free consultation.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://upflexdigital.com" class="bg-white text-purple-600 px-8 py-3 rounded-lg font-bold text-lg button-hover hover:shadow-xl inline-block">
+                    Get Your Free Consultation
+                </a>
+                <a href="mailto:info@upflexdigital.com" class="border-2 border-white text-white px-8 py-3 rounded-lg font-bold text-lg button-hover hover:bg-white hover:text-purple-600 inline-block transition-all duration-300">
+                    Email Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+                    About Upflex Digital
+                </h2>
+            </div>
+
+            <div class="space-y-8">
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Upflex Digital was founded in 2018 by a team of passionate web designers and digital strategists who saw a gap in the Sacramento market. We noticed that many local businesses were being left behind in the digital revolution, struggling with outdated websites and ineffective online strategies. Our mission was simple: to provide Sacramento's business community with world-class web design and digital solutions that actually drive results. What started as a small team working from a coffee shop has grown into a full-service digital agency trusted by over 150 businesses across Northern California.
+                </p>
+
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Today, we're committed to our core values of excellence, innovation, and partnership. We don't just build websites—we build long-term relationships with our clients. Every project is approached with the same dedication and attention to detail, whether it's a startup's first website or a redesign for an established enterprise. We believe in transparency, continuous learning, and staying ahead of industry trends to ensure our clients always have access to the latest and greatest in web design and digital marketing. Our success is measured by the success of our clients, and we're passionate about helping Sacramento businesses thrive in the digital age.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+                <div class="text-center">
+                    <div class="text-4xl font-bold gradient-accent bg-clip-text text-transparent mb-2">150+</div>
+                    <p class="text-gray-600 font-semibold">Successful Projects</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold gradient-accent bg-clip-text text-transparent mb-2">95%</div>
+                    <p class="text-gray-600 font-semibold">Client Satisfaction Rate</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold gradient-accent bg-clip-text text-transparent mb-2">7+</div>
+                    <p class="text-gray-600 font-semibold">Years of Excellence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-lg text-gray-600">
+                    Have questions about our web design services? We've got answers.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-white rounded-lg border border-gray-200 overflow-hidden">
+                    <button class="faq-question w-full px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition-colors duration-300 cursor-pointer">
+                        <span class="text-lg font-semibold text-gray-900 text-left">How long does it take to build a website?</span>
+                        <i class="faq-icon fas fa-chevron-down text-purple-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-4 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            The timeline for building a website depends on the complexity and scope of your project. A basic website typically takes 4-6 weeks, while more complex projects with custom features and integrations may take 8-12 weeks. We always provide a detailed project timeline during the initial consultation, and we keep you informed every step of the way. Our process includes discovery, design, development, testing, and launch phases, each carefully planned to ensure quality and timely delivery.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-white rounded-lg border border-gray-200 overflow-hidden">
+                    <button class="faq-question w-full px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition-colors duration-300 cursor-pointer">
+                        <span class="text-lg font-semibold text-gray-900 text-left">Do you offer ongoing support and maintenance?</span>
+                        <i class="faq-icon fas fa-chevron-down text-purple-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-4 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            Absolutely! We offer comprehensive maintenance and support packages to keep your website running smoothly. Our services include regular security updates, performance monitoring, backup management, and technical support. We can handle content updates, plugin updates, and any issues that arise. We believe in building long-term partnerships with our clients, and ongoing support is a crucial part of that. We offer flexible support plans tailored to your needs and budget.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-white rounded-lg border border-gray-200 overflow-hidden">
+                    <button class="faq-question w-full px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition-colors duration-300 cursor-pointer">
+                        <span class="text-lg font-semibold text-gray-900 text-left">Will my website be optimized for search engines?</span>
+                        <i class="faq-icon fas fa-chevron-down text-purple-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-4 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            Yes, SEO optimization is built into every website we create. We implement technical SEO best practices, including fast page load times, mobile responsiveness, proper heading structure, and clean code. We also focus on on-page optimization with keyword research, meta tags, and content strategy. Additionally, we provide local SEO optimization for Sacramento-based businesses to help you appear in local search results. While we can't guarantee specific rankings, our SEO-first approach gives your website the best possible foundation for search engine visibility.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-white rounded-lg border border-gray-200 overflow-hidden">
+                    <button class="faq-question w-full px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition-colors duration-300 cursor-pointer">
+                        <span class="text-lg font-semibold text-gray-900 text-left">Can I update my website content myself?</span>
+                        <i class="faq-icon fas fa-chevron-down text-purple-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-4 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            Absolutely! We build most of our websites on WordPress or other user-friendly content management systems that allow you to easily update content without technical knowledge. We provide comprehensive training and documentation so you can manage your website independently. If you prefer, we can also handle all content updates for you as part of our maintenance package. The choice is yours, and we'll set up your website in whatever way works best for your business.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item bg-white rounded-lg border border-gray-200 overflow-hidden">
+                    <button class="faq-question w-full px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition-colors duration-300 cursor-pointer">
+                        <span class="text-lg font-semibold text-gray-900 text-left">What's included in your web design packages?</span>
+                        <i class="faq-icon fas fa-chevron-down text-purple-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-4 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            Our web design packages include responsive design, SEO optimization, custom graphics, fast page load optimization, mobile-friendly design, and basic analytics setup. We also include unlimited revisions during the design phase to ensure you're completely satisfied. Depending on your package, you may also get e-commerce functionality, contact forms, social media integration, and content strategy consultation. We're happy to customize packages based on your specific needs and budget. Contact us for a detailed breakdown of what's included in each package.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <!-- Column 1: About -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 gradient-accent rounded-lg flex items-center justify-center text-white font-bold text-lg">
+                            UD
+                        </div>
+                        <span class="font-bold text-lg text-white">Upflex Digital</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        Crafting stunning, high-performing websites for Sacramento businesses since 2018.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Services -->
+                <div>
+                    <h3 class="font-bold text-white mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Web Design</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">SEO Optimization</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Branding</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">E-commerce</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Maintenance</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Company -->
+                <div>
+                    <h3 class="font-bold text-white mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">About Us</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Blog</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">FAQ</a></li>
+                        <li><a href="https://upflexdigital.com" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Legal -->
+                <div>
+                    <h3 class="font-bold text-white mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Cookie Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="border-t border-gray-800 pt-12 mb-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="flex items-start">
+                        <i class="fas fa-map-marker-alt text-purple-400 mr-4 mt-1"></i>
+                        <div>
+                            <p class="font-semibold text-white">Sacramento, CA</p>
+                            <p class="text-gray-400 text-sm">Serving Northern California</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-envelope text-purple-400 mr-4 mt-1"></i>
+                        <div>
+                            <p class="font-semibold text-white">Email</p>
+                            <a href="mailto:info@upflexdigital.com" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-sm">info@upflexdigital.com</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-phone text-purple-400 mr-4 mt-1"></i>
+                        <div>
+                            <p class="font-semibold text-white">Phone</p>
+                            <p class="text-gray-400 text-sm">Available upon request</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2025 Upflex Digital. All rights reserved. | 
+                    <a href="privacy.html" class="hover:text-purple-400 transition-colors duration-300">Privacy</a> | 
+                    <a href="terms.html" class="hover:text-purple-400 transition-colors duration-300">Terms</a> | 
+                    <a href="blog.html" class="hover:text-purple-400 transition-colors duration-300">Blog</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
